@@ -37,3 +37,13 @@ function validacionUsuario() {
     console.log(contraseniaEncontrada);
   }
 }
+
+// Acción de enviar el formulario
+
+let formularioContacto = document.getElementById ("formularioContacto");
+formularioContacto.addEventListener ("submit", validarFormulario);
+
+function validarFormulario (e){
+  e.preventDefault();
+  console.log("Envió su formulario");
+}
