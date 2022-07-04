@@ -1,1 +1,124 @@
 
+<html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- !STYLESHEET -->
+      <title>Centro de Urología</title>
+      <link rel="stylesheet" href="../estilos/estilos.css" />
+    </head>
+    <body>
+  
+      <!-- !NAVEGACIÓN -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nombreUno" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nombreUno" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nombreUno" href="prácticas.html">Prácticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active nombreUno" href="tecnologías.html">Tecnologías</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+      <!--SACAR TURNOS -->
+
+      <section id="contact" class="contacto">
+        <h1>Sacar turno</h1>
+        <div class="contacto__fila">
+          <div class="contacto__fila__columnaIzquierda">
+            <form
+              id="formularioContacto"
+              class="contacto__fila__columnaIzquierda__formulario"
+            >
+              <input
+                name="nombre"
+                type="text"
+                class="form-control"
+                placeholder="Tu Nombre"
+                required=""
+              />
+  
+              <input
+                name="numero"
+                type="number"
+                class="form-control"
+                placeholder="Tu número de teléfono"
+                required=""
+              />
+  
+              <input
+                type="date"
+                placeholder="Seleccione un día"
+                class="form-control"
+                required
+              />
+  
+              <select name="horario" id="hora">
+                <option value="0" selected disabled>Seleccione un horario</option>
+                <option value="1">09:00</option>
+                <option value="2">10:00</option>
+                <option value="3">11:00</option>
+                <option value="4">12:00</option>
+                <option value="5">16:00</option>
+                <option value="6">17:00</option>
+                <option value="7">18:00</option>
+                <option value="8">19:00</option>
+                <option value="9">20:00</option>
+              </select>
+  
+              <textarea
+                name="mensaje"
+                class="form-control"
+                rows="4"
+                placeholder="Mensaje"
+                required=""
+              ></textarea>
+  
+              <div class="contacto__fila__columnaIzquierda__formulario__boton">
+                <input type="submit" name="" id="" value="Enviar mensaje" />
+              </div>
+            </form>
+            <a href="mailto:crystaldesarrollo@gmail.com" id="btnMail"></a>
+          </div>
+          <div class="contacto__fila__columnaDerecha">
+            <div class="follow">
+              <label for="">Direccion: </label>
+              <a href="https://goo.gl/maps/pDwosscJyQdDeWJ36" target="_blank"
+                ><i class="fa-solid fa-location-dot"></i> Clotilde Brizuela 38 (cont. de la calle Moreno)</a>
+            </div>
+            <div class="follow">
+              <label for="">Teléfono: </label
+              ><i class="fa-solid fa-phone"></i> +54 4429805 o 3704905023
+            </div>
+            <div class="follow">
+              <label for="">E-Mail: </label>
+              <i class="fa-regular fa-envelope"></i>
+              urodit@gmail.com
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <script src="/js/main.js"></script>
+    </body>
+  </html>
+  
